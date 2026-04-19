@@ -1,5 +1,5 @@
 import { redirect } from 'next/navigation';
 
 export default function Home() {
-  redirect('/menu/host-burger');
+  redirect('/menu/mt-m-ltbykh');
 }
