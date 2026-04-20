@@ -64,7 +64,7 @@ export default function OrderModal({ open, items, currencyCode, total, discountA
       <div
         onClick={onClose}
         style={{
-          position: 'fixed', inset: 0, zIndex: 60,
+          position: 'fixed', top: 0, right: 0, bottom: 0, left: 0, zIndex: 60,
           background: 'rgba(43,27,14,0.55)',
           backdropFilter: 'blur(4px)',
           WebkitBackdropFilter: 'blur(4px)',
@@ -72,7 +72,7 @@ export default function OrderModal({ open, items, currencyCode, total, discountA
       />
 
       {/* Bottom sheet */}
-      <div className="slide-up" style={{ position: 'fixed', insetInline: 0, bottom: 0, zIndex: 60 }}>
+      <div className="slide-up" style={{ position: 'fixed', left: 0, right: 0, bottom: 0, zIndex: 60 }}>
         <div style={{
           background: '#FBF3E4', maxWidth: 440, margin: '0 auto',
           borderTopLeftRadius: 28, borderTopRightRadius: 28,

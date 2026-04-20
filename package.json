@@ -18,6 +18,12 @@
     "react-dom": "19.2.4",
     "react-hot-toast": "^2.6.0"
   },
+  "browserslist": [
+    "ios >= 10",
+    "chrome >= 67",
+    "firefox >= 67",
+    "safari >= 10"
+  ],
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",

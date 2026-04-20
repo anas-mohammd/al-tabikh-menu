@@ -76,7 +76,7 @@ export default function ProductDetailModal({
         onClick={onClose}
         className={`backdrop-in ${open ? '' : 'pointer-events-none'}`}
         style={{
-          position: 'fixed', inset: 0, zIndex: 50,
+          position: 'fixed', top: 0, right: 0, bottom: 0, left: 0, zIndex: 50,
           background: 'rgba(43,27,14,0.55)',
           opacity: open ? 1 : 0,
           transition: 'opacity 220ms ease',
@@ -86,7 +86,7 @@ export default function ProductDetailModal({
       {/* Bottom sheet */}
       <div
         style={{
-          position: 'fixed', insetInline: 0, bottom: 0, zIndex: 50,
+          position: 'fixed', left: 0, right: 0, bottom: 0, zIndex: 50,
           transform: open ? 'translateY(0)' : 'translateY(100%)',
           transition: 'transform 280ms cubic-bezier(.2,.8,.2,1)',
         }}
@@ -104,7 +104,7 @@ export default function ProductDetailModal({
           {/* Scrollable body */}
           <div style={{ overflowY: 'auto', flex: 1 }}>
             {/* Food image / placeholder */}
-            <div style={{ margin: '8px 16px 0', borderRadius: 20, overflow: 'hidden', aspectRatio: '16/9', position: 'relative' }}>
+            <div style={{ margin: '8px 16px 0', borderRadius: 20, overflow: 'hidden', position: 'relative', height: 220 }}>
               {item.image_url ? (
                 <Image
                   src={item.image_url}
@@ -182,7 +182,7 @@ export default function ProductDetailModal({
                 <div style={{ fontSize: 13, fontWeight: 700, color: '#6B5A48' }}>الكمية</div>
                 <div style={{
                   display: 'flex', alignItems: 'center', gap: 6,
-                  marginInlineStart: 'auto',
+                  marginRight: 'auto',
                   background: '#FFFFFF', borderRadius: 999, padding: 4,
                   border: '1px solid #E3D2B0',
                 }}>

@@ -211,7 +211,7 @@ export default function MenuPageContent() {
           boxShadow: '0 10px 28px rgba(62,29,8,.18)',
         }}>
           <div style={{
-            position: 'absolute', inset: 0, opacity: 0.1,
+            position: 'absolute', top: 0, right: 0, bottom: 0, left: 0, opacity: 0.1,
             backgroundImage: 'radial-gradient(#FBF3E4 1px, transparent 1px)',
             backgroundSize: '8px 8px', pointerEvents: 'none',
           }} />
@@ -279,7 +279,7 @@ export default function MenuPageContent() {
       {/* ── Floating cart ──────────────────────────────── */}
       {cartCount > 0 && !cartOpen && !detailOpen && (
         <div style={{
-          position: 'fixed', bottom: 20, insetInline: 16, zIndex: 40,
+          position: 'fixed', bottom: 20, left: 16, right: 16, zIndex: 40,
           display: 'flex', justifyContent: 'center',
         }}>
           <button
@@ -303,7 +303,7 @@ export default function MenuPageContent() {
             }}>
               {cartCount}
             </div>
-            <span style={{ marginInlineStart: 10, fontWeight: 700, fontSize: 15 }}>عرض السلة</span>
+            <span style={{ marginRight: 10, fontWeight: 700, fontSize: 15 }}>عرض السلة</span>
             <span style={{ flex: 1 }} />
             <span style={{ fontWeight: 700, fontSize: 15, fontVariantNumeric: 'tabular-nums' }}>
               {cartTotal.toFixed(0)} <span style={{ fontSize: 11, fontWeight: 500, opacity: 0.7 }}>{currencySymbol}</span>

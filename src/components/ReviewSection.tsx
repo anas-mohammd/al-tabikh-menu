@@ -152,13 +152,13 @@ export default function ReviewSection({ slug, restaurant }: Props) {
           <div
             onClick={() => setOpen(false)}
             style={{
-              position: 'fixed', inset: 0, zIndex: 50,
+              position: 'fixed', top: 0, right: 0, bottom: 0, left: 0, zIndex: 50,
               background: 'rgba(43,27,14,0.55)',
               backdropFilter: 'blur(4px)',
               WebkitBackdropFilter: 'blur(4px)',
             }}
           />
-          <div className="sheet-up" style={{ position: 'fixed', insetInline: 0, bottom: 0, zIndex: 50 }}>
+          <div className="sheet-up" style={{ position: 'fixed', left: 0, right: 0, bottom: 0, zIndex: 50 }}>
             <div style={{
               background: '#FBF3E4', maxWidth: 440, margin: '0 auto',
               borderTopLeftRadius: 28, borderTopRightRadius: 28,

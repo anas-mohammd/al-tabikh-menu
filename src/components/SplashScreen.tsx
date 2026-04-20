@@ -20,7 +20,7 @@ export default function SplashScreen({ onDone }: Props) {
   return (
     <div
       style={{
-        position: 'fixed', inset: 0, zIndex: 100,
+        position: 'fixed', top: 0, right: 0, bottom: 0, left: 0, zIndex: 100,
         display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
         background: 'linear-gradient(160deg, #FBF3E4 0%, #F5E8CE 100%)',
         opacity: phase === 'out' ? 0 : 1,
