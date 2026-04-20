@@ -5,7 +5,8 @@
       "WebFetch(domain:api.anthropic.com)",
       "mcp__Claude_in_Chrome__tabs_context_mcp",
       "Bash(npx next *)",
-      "mcp__Claude_Preview__preview_start"
+      "mcp__Claude_Preview__preview_start",
+      "Bash(npx @sentry/wizard@latest -i nextjs --saas --org orionmenu --project altabeekh)"
     ]
   }
 }
