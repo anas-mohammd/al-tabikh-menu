@@ -87,7 +87,7 @@ export default function CartDrawer({
       <div
         onClick={onClose}
         style={{
-          position: 'fixed', inset: 0, zIndex: 50,
+          position: 'fixed', top: 0, right: 0, bottom: 0, left: 0, zIndex: 50,
           background: 'rgba(43,27,14,0.45)',
           backdropFilter: 'blur(4px)', WebkitBackdropFilter: 'blur(4px)',
           opacity: open ? 1 : 0,
@@ -98,7 +98,7 @@ export default function CartDrawer({
 
       {/* Bottom sheet */}
       <div style={{
-        position: 'fixed', insetInline: 0, bottom: 0, zIndex: 50,
+        position: 'fixed', left: 0, right: 0, bottom: 0, zIndex: 50,
         transform: open ? 'translateY(0)' : 'translateY(100%)',
         transition: 'transform 300ms cubic-bezier(.2,.8,.2,1)',
       }}>
@@ -186,7 +186,7 @@ export default function CartDrawer({
                         <div style={{ fontWeight: 700, fontSize: 15, color: '#2B1B0E', lineHeight: 1.3 }}>
                           {ci.item.name}
                           {ci.variantName && (
-                            <span style={{ fontSize: 12, color: '#9B8A74', fontWeight: 400, marginInlineStart: 4 }}>
+                            <span style={{ fontSize: 12, color: '#9B8A74', fontWeight: 400, marginRight: 4 }}>
                               ({ci.variantName})
                             </span>
                           )}

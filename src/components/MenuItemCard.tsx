@@ -140,7 +140,7 @@ export default function MenuItemCard({
         onMouseUp={(e) => { (e.currentTarget as HTMLDivElement).style.transform = ''; }}
         onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.transform = ''; }}
       >
-        <div style={{ aspectRatio: '1/1', position: 'relative', width: '100%' }}>
+        <div style={{ position: 'relative', width: '100%', height: 180 }}>
           <Thumb size="grid" />
           {totalQty > 0 && (
             <div style={{
@@ -158,7 +158,7 @@ export default function MenuItemCard({
           </div>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 4 }}>
             <div style={{ fontWeight: 700, fontSize: 14, color: '#3E1D08', fontVariantNumeric: 'tabular-nums' }}>
-              {hasVariants && <span style={{ fontSize: 11, color: '#6B5A48', fontWeight: 500, marginInlineEnd: 3 }}>من</span>}
+              {hasVariants && <span style={{ fontSize: 11, color: '#6B5A48', fontWeight: 500, marginLeft: 3 }}>من</span>}
               {hasDiscount
                 ? <span style={{ color: '#C0392B' }}>{formatPrice(discountedPrice, currencyCode)}</span>
                 : formatPrice(displayPrice, currencyCode)
@@ -233,7 +233,7 @@ export default function MenuItemCard({
         {/* Price + action */}
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <div style={{ fontWeight: 700, fontSize: 16, color: '#3E1D08', fontVariantNumeric: 'tabular-nums' }}>
-            {hasVariants && <span style={{ fontSize: 11, color: '#6B5A48', fontWeight: 500, marginInlineEnd: 4 }}>من</span>}
+            {hasVariants && <span style={{ fontSize: 11, color: '#6B5A48', fontWeight: 500, marginLeft: 4 }}>من</span>}
             {hasDiscount ? (
               <span style={{ color: '#110201' }}>{formatPrice(discountedPrice, currencyCode)}</span>
             ) : (
